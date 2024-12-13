@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head', {title: "MacStore"}) %>
+    <body class="bg-gray-100">
+        <nav
+            class="fixed top-0 left-0 h-screen w-64 bg-white shadow-xl flex flex-col"
+        >
+            <a
+                class="px-6 py-6 border-b border-gray-200 flex items-center justify-between"
+                href="/products"
+            >
+                <div class="flex items-center cursor pointer">
+                    <svg
+                        class="w-8 h-8 text-[#b949bf]"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                    >
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                        <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </svg>
+                    <span class="ml-3 text-xl font-bold text-gray-800"
+                        >MacStore</span
+                    >
+                </div>
+            </a>
+
+            <div class="flex-grow px-4 py-6 space-y-2 overflow-y-auto">
+                <a
+                    href="/products/"
+                    class="flex items-center px-4 py-3 text-gray-700 hover:bg-[#ecd6f7] rounded-lg transition-all duration-300 ease-in-out"
+                >
+                    <i
+                        class="ri-product-hunt-line mr-3 text-xl text-gray-500"
+                    ></i>
+                    <div class="flex item-center gap-3">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-6"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"
+                            />
+                        </svg>
+
+                        <span class="font-bold">Products</span>
+                    </div>
+                </a>
+                <a
+                    href="/products/categories/"
+                    class="flex items-center px-4 py-3 text-gray-700 hover:bg-[#ecd6f7] rounded-lg transition-all duration-300 ease-in-out"
+                >
+                    <i
+                        class="ri-product-hunt-line mr-3 text-xl text-gray-500"
+                    ></i>
+                    <div class="flex item-center gap-3">
+                        <svg
+                            class="size-6"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-6"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="m21 7.5-2.25-1.313M21 7.5v2.25m0-2.25-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3 2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75 2.25-1.313M12 21.75V19.5m0 2.25-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25"
+                            />
+                        </svg>
+
+                        <span class="font-bold">Categories</span>
+                    </div>
+                </a>
+                <a
+                    href="/products/create"
+                    class="flex items-center px-4 py-3 text-gray-700 hover:bg-[#ecd6f7] rounded-lg transition-all duration-300 ease-in-out"
+                >
+                    <i
+                        class="ri-product-hunt-line mr-3 text-xl text-gray-500"
+                    ></i>
+                    <div class="flex item-center gap-3">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-6"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M12 4.5v15m7.5-7.5h-15"
+                            />
+                        </svg>
+
+                        <span class="font-bold">Add Products</span>
+                    </div>
+                </a>
+                <a
+                    href="/products/categories/create"
+                    class="flex items-center px-4 py-3 text-gray-700 hover:bg-[#ecd6f7] rounded-lg transition-all duration-300 ease-in-out"
+                >
+                    <i
+                        class="ri-product-hunt-line mr-3 text-xl text-gray-500"
+                    ></i>
+                    <div class="flex item-center gap-3">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-6"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M12 4.5v15m7.5-7.5h-15"
+                            />
+                        </svg>
+
+                        <span class="font-bold">Add Categories</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="px-4 py-6 border-t border-gray-200 space-y-2">
+                <!-- user info -->
+                <div class="flex justify-around items-center">
+                    <img
+                        id="user-avatar"
+                        src=""
+                        alt="User Avatar"
+                        class="w-10 h-10 rounded-full mr-3"
+                    />
+                    <h3 id="user-name" class="font-bold text-xl text-gray-800">
+                        Loading...
+                    </h3>
+                </div>
+                <a
+                    onclick="logoutUser()"
+                    class="cursor-pointer flex items-center px-4 py-3 text-gray-700 hover:bg-[#ecd6f7] rounded-lg transition-all duration-300 ease-in-out"
+                >
+                    <i
+                        class="ri-logout-circle-r-line mr-3 text-xl text-red-500"
+                    ></i>
+                    <span class="font-medium text-red-500">Logout</span>
+                </a>
+            </div>
+        </nav>
+
+        <main class="ml-64 w-[calc(100%-16rem)]"><%- body %></main>
+        <script>
+            // logout functionality
+            async function logoutUser() {
+                confirm("Are you sure you want to log out?");
+                if (!confirm) return;
+                try {
+                    const response = await fetch("/auth/logout", {
+                        method: "GET",
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                    });
+                    if (response.ok) {
+                        const data = await response.json();
+                        if (data.success) {
+                            window.location.href = "/auth/login";
+                        } else {
+                            alert("Failed to log out. Please try again.");
+                        }
+                    }
+                } catch (error) {
+                    console.error("Error logging out:", error);
+                    alert("Error logging out. Please try again.");
+                }
+            }
+
+            // get user information
+            // Get user information
+            async function getUserInfo() {
+                try {
+                    const response = await fetch("/users/me", {
+                        method: "GET",
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                    });
+
+                    if (response.ok) {
+                        const data = await response.json();
+
+                        // Populate the user information fields
+                        document.getElementById("user-name").textContent =
+                            data.user.username.toUpperCase();
+                        document.getElementById("user-avatar").src =
+                            "/avatars/" + data.user.avatar;
+                    } else {
+                        alert(
+                            "Failed to retrieve user information. Please check your connection."
+                        );
+                    }
+                } catch (error) {
+                    console.error("Error retrieving user information:", error);
+                    alert(
+                        "Error retrieving user information. Please try again."
+                    );
+                }
+            }
+
+            // Fetch user information on page load
+            document.addEventListener("DOMContentLoaded", getUserInfo);
+        </script>
+    </body>
+</html>
